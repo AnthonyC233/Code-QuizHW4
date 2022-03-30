@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+
+<body>
+    <div class="timer">Time:<span id="time">0</span></div>
+    
+    <div id="start-screen" class="start">
+        <h1>Pop Coding Quiz</h1>
+        <p> Try to answer each question correctly within the time limit. If you get any 
+            questions wrong your time will be penalized
+            by 15 seconds!
+        </p>
+        <button id="start">Start Pop Quiz</button>
+    </div>
+    
+    <div class="container">
+        <div id="question-holder" class="hidden">
+            <div id="Questions">Questions</div>
+            <div id="Choices" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+    </div>
+</div>
+    <div class="controls">
+        <button id="start-choice" class="start-choice btn">Start</button>
+        <button id="next-choice"  class="next-choice btn hide">Next</button>
+    </div>
+    <script src="./Assets/questions.js"></script>
+    <script src="./Assets/logic.js"></script>
+</body>
+</html>
