@@ -17,26 +17,20 @@
             questions wrong your time will be penalized
             by 15 seconds!
         </p>
-        <button id="start">Start Pop Quiz</button>
+        <button onclick="beginGame()" id="start">Start Pop Quiz</button>
     </div>
     <!-- This container holds all questions -->
-    <div class="container">
-        <div id="question-holder" class="hidden">
-            <div id="Questions">Questions</div>
-            <div id="Choices" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+    <div class="container hide">
+        <div id="question-holder">
+            <div id="question-text">Questions</div>
+                <div id="choices" class="btn-grid">
+                    <button class="btn" id = "choice-1">Answer 1</button>
+                    <button class="btn" id = "choice-2">Answer 2</button>
+                    <button class="btn" id = "choice-3">Answer 3</button>
+                    <button class="btn" id = "choice-4">Answer 4</button>
     </div>
 </div>
-    <!--Code below controls the start/next button  -->
-    <div class="controls">
-        <button id="start-choice" class="start-choice btn">Start</button>
-        <button id="next-choice"  class="next-choice btn hide">Next</button>
-    </div>
     <!-- Connects to HTML to java -->
-    <script src="./Assets/questions.js"></script>
     <script src="./Assets/logic.js"></script>
 </body>
 </html>
